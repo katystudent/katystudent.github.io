@@ -1,5 +1,13 @@
 ---
 title: Blog
 layout: default
-shownav: true
 ---
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <!--<img src="{{ post.image }}" alt="">-->
+    </li>
+  {% endfor %}
+</ul>
